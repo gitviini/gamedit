@@ -18,8 +18,11 @@
     "test": "nodemon run.js"
   },
   "dependencies": {
+    "body-parser": "^2.2.0",
     "express": "^5.1.0",
     "morgan": "^1.10.0",
-    "nodemon": "^3.1.10"
+    "nodemon": "^3.1.10",
+    "nunjucks": "^3.2.4",
+    "serve-favicon": "^2.5.0"
   }
 }
