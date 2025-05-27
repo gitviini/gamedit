@@ -12,9 +12,10 @@ const PORT = 3000
 // * Aplication configures
 
 app.set("view engine", "njk")
-nunjucks.configure(getPath("/templates/"), { autoescape: true, express: app, watch: true })
-app.use(express.static(getPath("/static/")))
+nunjucks.configure(getPath("/views/templates/"), { autoescape: true, express: app, watch: true })
+app.use(express.static(getPath("/views/static/")))
 app.use(bodyParser.json())
+app.use(favicon("src/views/static/img/favicon.svg"))
 
 // * Middlewares
 app.use(morgan("tiny"))
